@@ -1,4 +1,29 @@
 body {
+
+    /* สําหรับหน้าจอขนาดใหญ่ (คอมพิวเตอร์) */
+@media only screen and (min-width: 1024px) {
+  .example {
+    background-color: lightblue;
+    /* กำหนด CSS สําหรับคอมพิวเตอร์ */
+  }
+}
+
+/* สําหรับหน้าจอขนาดกลาง (แท็บเล็ต เช่น iPad) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .example {
+    background-color: lightgreen;
+    /* กำหนด CSS สําหรับ iPad */
+  }
+}
+
+/* สําหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media only screen and (max-width: 767px) {
+  .example {
+    background-color: lightcoral;
+    /* กำหนด CSS สําหรับมือถือ */
+  }
+
+    
     margin: 0;
     padding: 0;
     font-family: "phetsarath OT";
